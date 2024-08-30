@@ -1,0 +1,50 @@
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+// Loops to enumerate the classes for gallery columns.
+@for $i from 2 through 9 {
+
+	.gallery-columns-#{$i} {
+		grid-template-columns: repeat($i, 1fr);
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.slider {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+	border-radius: 60px 0px;
+	background-color: $color__white;
+    border-radius: 60px 0;
+    margin: 10px;
+}
+
+.slider-con {
+	font-size: 24px;
+	cursor: pointer;
+
+	svg {
+		border-radius: 99px;
+		color: #358070;
+	}
+}
+
+.data-cards {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+	border-radius: 60px 0px;
+	background-color: $color__white;
+    border-radius: 60px 0;
+	width: 185px;
+	height: 185px;
+}

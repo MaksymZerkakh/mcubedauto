@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --background-avocado: #69995D;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #16588E;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1 {
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro-header {
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.social {
+  font-size: 0;
+  max-width: 200px;
+}
+
+.social li a:before {
+  content: attr(icon-content);
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 900;
+  letter-spacing: .18px;
+  text-transform: lowercase;
+  transition: color .7s
+}
