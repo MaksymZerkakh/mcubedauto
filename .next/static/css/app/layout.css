@@ -985,6 +985,10 @@ video {
   max-width: 1200px; }
 .max-w-\[640px\]{
   max-width: 640px; }
+.max-w-\[300px\]{
+  max-width: 300px; }
+.max-w-\[200px\]{
+  max-width: 200px; }
 .flex-grow{
   flex-grow: 1; }
 .flex-col{
@@ -1015,6 +1019,8 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem; }
+.text-\[24px\]{
+  font-size: 24px; }
 .uppercase{
   text-transform: uppercase; }
 .tracking-\[4px\]{
@@ -1991,6 +1997,10 @@ footer {
   margin-bottom: 1.5em; }
 
 @media (min-width: 768px){
+  .md\:w-full{
+    width: 100%; }
+  .md\:max-w-full{
+    max-width: 100%; }
   .md\:flex-row{
     flex-direction: row; }
   .md\:justify-around{
@@ -2527,6 +2537,12 @@ video {
 .max-w-\[640px\] {
   max-width: 640px;
 }
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+.max-w-\[200px\] {
+  max-width: 200px;
+}
 .flex-grow {
   flex-grow: 1;
 }
@@ -2570,6 +2586,9 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-\[24px\] {
+  font-size: 24px;
 }
 .uppercase {
   text-transform: uppercase;
@@ -2633,6 +2652,14 @@ h1 {
 }
 
 @media (min-width: 768px) {
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
+  }
 
   .md\:flex-row {
     flex-direction: row;
